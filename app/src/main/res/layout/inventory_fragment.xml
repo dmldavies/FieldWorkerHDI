@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_to_refresh_inventory"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.titomi.workertrackerloginmodule.dashboard_fragments.FragmentInventory">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChartInvt"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/progressBar"
+            android:layout_marginTop="20dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/barChartInvt"
+            android:layout_margin="10dp"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/red" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="Stock Balance"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="18dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/md_blue_800" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="Total Quantity Sold"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="18dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/md_light_green_A400" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="Total Inventory"
+                    android:textColor="@color/black" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1565c0</color>
+    <color name="colorPrimaryDark">#003c8f</color>
+    <color name="colorPrimaryLight">#5e92f3</color>
+    <color name="colorAccent">#5291ff</color>
+    <color name="startblue">#09c6df</color>
+    <color name="graylight">#fafafa</color>
+    <color name="endblue">#0bcce6</color>
+    <color name="colorfabText">#ffffff</color>
+    <color name="colorfabBackground"></color>
+    <color name="tabTextColor">#ffffff</color>
+    <color name="tabIndicatorBar">#afc4c7</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#c30808</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="gray">#f0f0f0</color>
+    <color name="light_blue">#a8c2f6</color>
+
+    //Inventory Bar Chart Bar colors
+    <color name="balanceColor">#9e190d</color>
+    <color name="quantityColor">#5f9e0d</color>
+    <color name="quantitySoldColor">#69e9e4</color>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/cardview_default_elevation"
+        app:cardCornerRadius="5dp"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/username_with_image">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:id="@+id/user_icon"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Admin"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toEndOf="@id/user_icon"
+                    android:id="@+id/username"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:id="@+id/dateTime"
+                    android:layout_marginStart="5dp"
+
+                    android:text="23 Aug 08:00pm"
+                    android:layout_gravity="bottom"
+                    android:layout_below="@id/username"
+                    android:layout_toEndOf="@id/user_icon"
+
+
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:textSize="12sp"
+                android:text="Hello World"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_below="@id/username_with_image"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@id/messageBody"
+                android:layout_below="@+id/title"
+                android:text="This is home, i am finally where i belong"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/priority_high_20958"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+
+                android:id="@+id/priorityImage"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/newText"
+            android:textColor="@color/red"
+        android:layout_toEndOf="@id/username_with_image"
+        android:text="New"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

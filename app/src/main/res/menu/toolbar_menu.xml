@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/refresh"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_refresh_white"
+        android:title="Refresh"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/alert_manager_settings"
+        android:orderInCategory="200"
+        android:title="Alert Settings"
+        app:showAsAction="never"
+        />
+</menu>

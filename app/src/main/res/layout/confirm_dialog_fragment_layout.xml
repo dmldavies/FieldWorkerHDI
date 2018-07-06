@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:padding="5dp"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Please confirm that you want to continue"
+        android:textAlignment="gravity"
+        android:id="@+id/message"
+        android:gravity="fill_vertical"
+        android:drawableStart="@android:drawable/ic_dialog_info"
+        android:layout_gravity="center"
+        android:drawablePadding="5dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:layout_gravity="end">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:text="@string/no"
+            android:id="@+id/no"
+            android:textSize="14sp"
+            android:background="@drawable/roundrectangle"
+            style="@style/Base.TextAppearance.AppCompat.Inverse"
+            android:textColor="@color/black"
+            android:padding="5dp"
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:text="@string/yes"
+            android:textSize="14sp"
+            android:id="@+id/yes"
+            android:background="@drawable/roundrectangle"
+            android:backgroundTint="@color/red"
+            android:textColor="@color/white"
+            android:padding="5dp"/>
+    </LinearLayout>
+</LinearLayout>

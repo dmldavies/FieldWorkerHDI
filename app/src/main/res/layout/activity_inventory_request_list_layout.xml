@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/noInventory"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/noInventoryNotif"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/swipeRefresh">
+
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inventoryRequestList"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/newRequest"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        app:backgroundTint="@color/colorPrimary"
+        app:srcCompat="@drawable/ic_add_white_24dp"
+        app:rippleColor="@color/colorPrimary"
+
+        android:layout_marginBottom="60dp"/>
+
+</RelativeLayout>

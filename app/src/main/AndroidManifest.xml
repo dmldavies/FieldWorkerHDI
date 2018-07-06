@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.titomi.workertrackerloginmodule">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- The API key for Google Maps-based APIs. -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".HomeSplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".TabActivity" />
+        <activity
+            android:name=".report_module.ReportActivity"
+            android:label="Write Report"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity android:name=".user_profile.UserProfileActivity" />
+        <activity android:name=".user_profile.EditProfileActivity" />
+        <activity android:name=".inventory_module.InventoryActivity" />
+        <activity android:name=".attendance_module.attendance_sub_menu.AttendanceActivity" />
+        <activity android:name=".task.TaskDetailsActivity" />
+        <activity android:name=".report_module.ReportMainActivity" />
+        <activity android:name=".attendance_module.AttendanceMainActivity" />
+        <activity android:name=".alert_manager.AlertMainActivity" />
+        <activity android:name=".supervisor_manager.SupervisorMainActivity" />
+        <activity android:name=".inventory_module.inventory_sub_menu.ProductRequestActivity" />
+        <activity android:name=".inventory_module.inventory_sub_menu.ReceivedInventoryActivity" />
+        <activity
+            android:name=".inventory_module.inventory_sub_menu.RemittanceRecordsActivity"
+            android:label="Remittance Record"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".inventory_module.inventory_sub_menu.InventoryReportActivity"
+            android:label="Inventory Report"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity android:name=".inventory_module.inventory_sub_menu.SalesReportActivity" />
+        <activity android:name=".attendance_module.attendance_sub_menu.AttendanceReportActivity" />
+        <activity android:name=".attendance_module.attendance_sub_menu.LeaveRequestActivity" />
+        <activity
+            android:name=".attendance_module.attendance_sub_menu.LeaveHistoryActivity"
+            android:icon="@drawable/app_logo"
+            android:label="Leave Applications"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity android:name=".alert_manager.alert_sub_menu.GeofencingActivity" />
+        <activity android:name=".alert_manager.alert_sub_menu.LowStockActivity" />
+        <activity android:name=".alert_manager.alert_sub_menu.AbsentActivity" />
+        <activity android:name=".alert_manager.alert_sub_menu.LowBatteryActivity" />
+        <activity android:name=".message_and_notice.MessagesActivity" />
+        <activity android:name=".supervisor.activities.MainActivity" />
+        <activity
+            android:name=".supervisor.activities.ActivityAdminNewMessage"
+            android:label="New Message"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".supervisor.activities.ActivityMessageListing"
+            android:label="Messages"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".supervisor.activities.ActivityViewMessage"
+            android:label="View Message"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".supervisor.activities.ActivityMessageMenu"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".supervisor.activities.ActivityInventoryRequestsListing"
+            android:label="Requests"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".supervisor.activities.ActivityAssignTask"
+            android:label="New Route Plan"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".supervisor.activities.ActivityViewReport"
+            android:label="View Report"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".supervisor.activities.ActivityReportListing"
+            android:label="Reports"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".supervisor.activities.ActivityChallenges"
+            android:label="Challenges"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".supervisor.activities.ActivityLeaveApplication"
+            android:label="Leave Application"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity android:name=".supervisor.activities.ActivityAttendanceReport" />
+        <activity
+            android:name=".supervisor.activities.ActivityTaskListing"
+            android:label="Route Plans"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login" />
+        <activity
+            android:name=".supervisor.activities.ActivityInventoryRequest"
+            android:label="Inventory Request"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity android:name=".report_module.ActivityVideoTrimmer" />
+        <activity
+            android:name=".report_module.VideoPlayer"
+            android:label="Video Player"
+            android:theme="@style/AppTheme.DarkActionBar" />
+
+        <service
+            android:name=".services.FieldMonitorMessagingService"
+            android:label="FieldMonitorMessagingService" />
+        <service
+            android:name=".services.FieldMonitorReportUploadService"
+            android:label="FieldMonitorReportUploadService" />
+        <service android:name=".services.FieldMonitorRecordService" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".inventory_module.inventory_sub_menu.ActivityAddRemit"
+            android:label="Enter Record"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity android:name=".supervisor.activities.CustomPhotoGalleryActivity" />
+        <activity
+            android:name=".report_module.ActivityWorkerReportListing"
+            android:label="My Reports"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".report_module.ActivityNurseViewReport"
+            android:label="View Report"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".supervisor.activities.ActivityInstitutionListing"
+            android:label="Institutions"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".supervisor.activities.ActivityAddInstitution"
+            android:label="New Institution"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".supervisor.activities.ActivityTaskMap"
+            android:label="Map Activity in Task Listing"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity android:name=".supervisor.activities.NoNetworkActivity" />
+
+        <service
+            android:name=".services.FieldMonitorTaskService"
+            android:enabled="true"
+            android:label="FieldMonitorTaskService" />
+        <service
+            android:name=".services.FieldMonitorLocationService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

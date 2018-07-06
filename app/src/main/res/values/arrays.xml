@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="header">
+        <item>S/N</item>
+        <item>DATE</item>
+        <item>STATE</item>
+        <item>TOWN</item>
+        <item>NAME OF INSTITUTION</item>
+        <item>ADDRESS</item>
+        <item>CONTACT PERSON</item>
+        <item>TELEPHONE</item>
+        <item>PARTICIPANTS</item>
+        <item>TIME</item>
+    </string-array>
+
+    <string-array name="institutionType">
+        <item>Hospital</item>
+        <item>School</item>
+    </string-array>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:padding="50dp"
+ >
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="View Report"
+        android:id="@+id/viewReportText"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        android:drawableStart="@drawable/view_24"
+        android:drawablePadding="10dp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Edit Task"
+        android:id="@+id/editTask"
+        android:gravity="center_vertical"
+        android:drawablePadding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/ic_edit_black_24dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Delete Task"
+        android:id="@+id/deleteTask"
+        android:gravity="center_vertical"
+        android:drawablePadding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:drawableStart="@drawable/ic_delete_forever_black_24dp"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Clock in"
+        android:id="@+id/clock_in"
+        android:gravity="center_vertical"
+        android:drawablePadding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:tag="@string/clockIn"
+        android:drawableStart="@drawable/ic_clockin_black_24dp"/>
+
+</LinearLayout>

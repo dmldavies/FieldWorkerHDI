@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/parent"
+    >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    >
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/user_icon"
+                        android:layout_width="50dp"
+
+                        android:layout_height="50dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+
+                        android:layout_toEndOf="@id/user_icon"
+                        android:text="John Doe"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/dateSubmitted"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/username"
+                        android:layout_below="@id/username"
+                        android:layout_marginTop="1dp"
+                        android:text="Submitted on 3rd, Aug 2017"
+                        android:textSize="12sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/taskTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/user_icon"
+                        android:layout_marginTop="10dp"
+                        android:text="Supply of Pampers to Boys Secondary School, Ikoyi"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:id="@+id/taskType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/taskTitle"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/taskTypeLabel"
+                            android:layout_width="wrap_content"
+
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+
+                            android:text="Task Type:"
+                            android:textSize="12sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/taskTypeText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+
+                            android:layout_marginTop="5dp"
+
+                            android:text="Hospital"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/institutionLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/taskType"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+                        <TextView
+                            android:id="@+id/institution"
+                            android:layout_width="wrap_content"
+
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+
+
+                            android:text="Institution:"
+                            android:textSize="12sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/institutionText"
+                            android:layout_width="wrap_content"
+
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Ave Marie Hospital"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/addressLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/institutionLayout"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+                            android:layout_marginTop="5dp"
+                            android:text="Address"
+
+
+                            android:textSize="12sp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/addressText"
+                            android:layout_width="wrap_content"
+
+
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="5dp"
+                            android:text="12 Tunde Liadi street Akesan lagos"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/stateTownLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/addressLayout"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+                            android:layout_marginTop="5dp"
+                            android:text="State:"
+
+
+                            android:textSize="12sp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/stateText"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+
+                            android:layout_marginTop="5dp"
+                            android:text="Lagos"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Town:"
+
+
+                            android:textSize="12sp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/townText"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+
+                            android:layout_marginTop="5dp"
+                            android:text="Ikeja"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            />
+                    </LinearLayout>
+
+                    <GridLayout
+                        android:id="@+id/contactPersonLayout"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/stateTownLayout"
+                        android:layout_marginTop="5dp"
+                        android:alignmentMode="alignBounds"
+                        android:background="@color/white"
+                        android:columnCount="2"
+                        android:padding="5dp"
+                        android:rowCount="2"
+                        android:useDefaultMargins="true"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+                            android:layout_marginTop="5dp"
+                            android:text="Contact person"
+
+
+                            android:textSize="12sp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+                            android:layout_gravity="center|top"
+                            android:layout_marginTop="5dp"
+
+
+                            android:text="Phone"
+                            android:textSize="12sp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/contactFullName"
+                            android:layout_width="wrap_content"
+
+
+                            android:layout_height="wrap_content"
+
+                            android:text="Mrs Lamidi"
+                            android:textColor="@color/black"
+
+                            android:textSize="14sp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/contactPhone"
+                            android:layout_width="wrap_content"
+
+
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center|bottom"
+                            android:text="08034567903"
+
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            />
+                    </GridLayout>
+
+                    <GridLayout
+                        android:id="@+id/inventoryLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/contactPersonLayout"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:alignmentMode="alignBounds"
+                        android:background="@color/white"
+                        android:columnCount="4"
+                        android:padding="5dp"
+                        android:rowCount="2"
+                        android:useDefaultMargins="true"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Quantity Given"
+                            android:textSize="12sp"
+                            android:visibility="gone"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|start"
+                            android:layout_marginStart="20dp"
+                            android:text="Persons met"
+
+                            android:textSize="12sp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|top"
+                            android:layout_marginStart="50dp"
+                            android:text="Distributed"
+                            android:textSize="12sp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+                            android:layout_gravity="center|top"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="5dp"
+
+                            android:text="Balance"
+                            android:textSize="12sp"
+
+
+                            />
+                        <TextView
+                            android:id="@+id/quantityGivenText"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="20"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+
+                            android:visibility="gone"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/participants"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center_horizontal"
+                            android:text="14"
+
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/quantityDistributedText"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center|bottom"
+                            android:text="14"
+
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/balanceText"
+                            android:layout_width="wrap_content"
+
+
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|bottom"
+
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+
+
+
+
+                            />
+                    </GridLayout>
+
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Images"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+                    <LinearLayout
+                        android:id="@+id/reportImagesLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" />
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/videoText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:drawableStart="@drawable/ic_play_arrow_black_24dp"
+
+                        android:gravity="center_vertical"
+                        android:text="Play Video"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/audioText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:drawableStart="@drawable/ic_audiotrack_black_24dp"
+                        android:gravity="center_vertical"
+                        android:text="Play Audio"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Comment"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/commentText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/exportText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="10dp"
+
+                        android:drawableEnd="@drawable/export3"
+                        android:gravity="center_vertical"
+                        android:text="Export"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/approveText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp"
+                        android:drawableEnd="@drawable/ic_thumb_up_black_24dp"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="Approve"
+                        android:textColor="@color/colorPrimary" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+</LinearLayout>

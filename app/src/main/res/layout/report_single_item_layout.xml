@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/cardview_default_elevation"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:id="@+id/user_icon"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/username"
+                android:layout_toEndOf="@id/user_icon"
+
+                android:text="John Doe"
+                android:textColor="@color/black"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/username"
+                android:textSize="12sp"
+                android:text="Submitted on 3rd, Aug 2017"
+                android:layout_marginTop="1dp"
+                android:layout_alignStart="@id/username"
+                android:id="@+id/dateSubmitted"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Supply of Pampers to Boys Secondary School, Ikoyi"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/user_icon"
+                android:id="@+id/taskTitle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Report"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_below="@id/taskTitle"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/viewReportText"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

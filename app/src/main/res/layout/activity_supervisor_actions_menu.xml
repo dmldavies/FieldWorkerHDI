@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activities.ActivityMessageMenu"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/clockInLayout"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_alignParentStart="true"
+            android:text="@string/clockIn"
+            android:gravity="center_vertical"
+            android:drawablePadding="2dp"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:background="@color/colorPrimary"
+            android:drawableStart="@drawable/ic_schedule_white_18dp"
+            android:id="@+id/clockIn"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_alignParentEnd="true"
+            android:text="@string/clockOut"
+            android:textAllCaps="true"
+            android:enabled="false"
+            android:drawablePadding="2dp"
+            android:gravity="center_vertical"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/ic_schedule_white_18dp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:background="#f0f0f0"
+            android:id="@+id/clockOut"
+            android:layout_marginBottom="10dp"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Inverse"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/clockInLayout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/send_message"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="@color/colorPrimary"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/sendMessage"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/messages"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:id="@+id/viewMessages"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/inventoryRequest"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:id="@+id/inventoryRequest"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/reports"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:id="@+id/reports"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/tasks"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:id="@+id/assignTask"
+                android:layout_marginBottom="10dp"/>
+
+
+<!--
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/challenges"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:id="@+id/challenges"
+                android:layout_marginBottom="10dp"/>
+            -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/leaveApplication"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:id="@+id/leaveApplication"
+                android:layout_marginBottom="10dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/attendanceReport"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:id="@+id/attendanceReport"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

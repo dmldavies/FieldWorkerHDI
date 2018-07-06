@@ -1,0 +1,234 @@
+<resources>
+    <string name="action_settings">Settings</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="title_activity_login">Login Activity</string>
+    <string name="register_button">Register Now</string>
+    <string name="register_instruction">No account yet? Create one</string>
+    <string name="welcome">WELCOME</string>
+    <string name="is_login">You have been successfully logged in</string>
+    <string name="title_activity_register">Register Activity</string>
+    <string name="sign_up">Sign Up Now</string>
+    <string name="title_activity_report">ReportActivity</string>
+    <string name="title_activity_note_select">NoteSelect</string>
+    <string name="google_maps_key">AIzaSyDwtoPs3hSitTiw8iUBkrlLYLEQVuulm3A</string>
+    <string name="optional">(optional)</string>
+    <string name="required">Required</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="add_task_url">task/add.php</string>
+    <string name="field_worker_api_key">a66Zo3osEyV7o</string>
+    <string name="google_api_key">AIzaSyDwtoPs3hSitTiw8iUBkrlLYLEQVuulm3A</string>
+    <string name="worker_id">worker_id</string>
+    <string name="task_title">task_title</string>
+    <string name="task_description">description</string>
+    <string name="full_address">address</string>
+    <string name="work_type">work_type</string>
+    <string name="supervisor_id">supervisor_id</string>
+    <string name="time_given">time_given</string>
+    <string name="lga">lga</string>
+    <string name="state">state</string>
+    <string name="quantity">quantity</string>
+    <string name="contact_full_name">contact_name</string>
+    <string name="date_given">date_given</string>
+    <string name="institution_name">institution_name</string>
+    <string name="contact_number">contact_number</string>
+    <string name="statusCode">statusCode</string>
+    <string name="distributor_api_url">distributor/view.php</string>
+    <string name="comment">Comment</string>
+    <string name="inventory_request_api">inventory/add_request.php</string>
+    <string name="distributor_id">distributor_id</string>
+    <string name="product_name">product_name</string>
+    <string name="priority">Priority</string>
+    <string name="view_message_url">messaging/view.php</string>
+    <string name="leave_application_url">leave/add.php</string>
+    <string name="task_url">task/view.php</string>
+    <string name="pleaseWait">Please wait</string>
+    <string name="no_task">No task available.\n Click on the + button to assign tasks</string>
+    <string name="tasks">Tasks</string>
+    <string name="loggedInUser">loggedInUser</string>
+    <string name="api_url">http://fieldmonitor.co/fieldworker_api/</string>
+    <string name="login_url">user/login.php</string>
+    <string name="delete_task_url">task/delete.php</string>
+    <string name="you_have_a_new_message">You have a new message</string>
+    <string name="noInventory">No inventory requests at this time</string>
+    <string name="inventory_view_requests_url">inventory/view.php</string>
+    <string name="approve_task_url">task/approve.php</string>
+    <!--<string name="server_url">http://fieldmonitor.co/</string>-->
+    <string name="edit_task_url">task/edit.php</string>
+
+    <string name="app_name">FieldMonitor</string>
+    <string name="message_title">Message Heading</string>
+    <string name="message_body">Message Body</string>
+    <string name="user">User</string>
+    <string name="new_message">New Message</string>
+    <string name="sort">Sort</string>
+
+    <string name="state_api_url">states_api/core/states/view.php</string>
+
+    <string name="add_message_url">messaging/add.php</string>
+    <string name="messages">Messages</string>
+    <string name="view_message">View Message</string>
+    <string name="message">Message</string>
+    <string name="id">id</string>
+    <string name="delete_msg_url" />
+    <string name="send_message">Send Message</string>
+    <string name="view_messages">View Messages</string>
+    <string name="no">no</string>
+    <string name="yes">yes</string>
+    <string name="assignTask">Assign Task</string>
+    <string name="inventoryRequest">Inventory Request</string>
+    <string name="reportDetails">Report Details</string>
+    <string name="reports">Reports</string>
+    <string name="clockIn">Clock In</string>
+    <string name="challenges">Challenges</string>
+    <string name="leaveApplication">Leave Application</string>
+    <string name="attendanceReport">Attendance Report</string>
+    <string name="submit">Submit</string>
+    <string name="leave_application">Leave Application</string>
+    <string name="clockOut">Clock Out</string>
+    <string name="supervisor_view_url">supervisor/view.php</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="states_api">states_api/core/states/view.php</string>
+    <string name="task_type">Task Type:</string>
+    <string name="_task_type">task_type</string>
+    <string name="click_to_select">Click to select</string>
+    <string name="date_format">yyyy/mm/dd</string>
+    <string name="location">Location:</string>
+    <string name="task_location">location</string>
+    <string-array name="sort_by">
+        <item>New to Old</item>
+        <item>Old to New</item>
+    </string-array>
+
+    <string-array name="sendToSpinnerData">
+        <item>All my workers</item>
+        <item>Single worker</item>
+    </string-array>
+    <string-array name="priorityArray">
+        <item>High</item>
+        <item>Normal</item>
+
+    </string-array>
+    <string-array name="products">
+        <item>Always Ultra Sanitary Pad(Big)</item>
+        <item>Always Ultra Sanitary Pad(Small)</item>
+        <item>Pampers (Big)</item>
+        <item>Pampers (Small)</item>
+    </string-array>
+
+
+    <string-array name="distributors">
+        <item>Distributor 1</item>
+        <item>Distributor 2</item>
+    </string-array>
+
+    <string-array name="taskType">
+        <item>Always School Program</item>
+        <item>Pampers Hospital Program</item>
+    </string-array>
+
+    <string-array name="states">
+        <item>Select...</item>
+        <item>Abia</item>
+        <item>Adamawa</item>
+        <item>Anambra</item>
+        <item>Akwa Ibom</item>
+        <item>Bauchi</item>
+        <item>Bayelsa</item>
+        <item>Benue</item>
+        <item>Borno</item>
+        <item>Cross River</item>
+        <item>Delta</item>
+        <item>Ebonyi</item>
+        <item>Enugu</item>
+        <item>Edo</item>
+        <item>Ekiti</item>
+        <item>Gombe</item>
+        <item>Imo</item>
+        <item>Jigawa</item>
+        <item>Kaduna</item>
+        <item>Kano</item>
+        <item>Katsina</item>
+        <item>Kebbi</item>
+        <item>Kogi</item>
+        <item>Kwara</item>
+        <item>Lagos</item>
+        <item>Nasarawa</item>
+        <item>Niger</item>
+        <item>Ogun</item>
+        <item>Ondo</item>
+        <item>Osun</item>
+        <item>Oyo</item>
+        <item>Plateau</item>
+        <item>Rivers</item>
+        <item>Sokoto</item>
+        <item>Taraba</item>
+        <item>Yobe</item>
+        <item>Zamfara</item>
+        <item>FCT Abuja</item>
+    </string-array>
+
+    <string-array name="task_status">
+        <item>Pending</item>
+        <item>Ongoing</item>
+        <item>Pending Approval</item>
+        <item>Completed</item>
+    </string-array>
+
+    <string name="server_url">http://fieldmonitor.co/</string>
+    <string name="product_id">product_id</string>
+    <string name="products_url">products/view.php</string>
+    <string name="latitude">latitude</string>
+    <string name="longitude">longitude</string>
+    <string name="clockInUrl">task/clockin.php</string>
+    <string name="alert_api">alert/add.php</string>
+    <string name="submitting_report">Submitting report</string>
+    <string name="image_upload_url">task/image_uploader.php</string>
+    <string name="audio_upload_url">task/audio_uploader.php</string>
+    <string name="video_upload_url">task/video_uploader.php</string>
+    <string name="clockOutUrl">task/clock_out.php</string>
+    <string name="noLeave">No leave application available</string>
+    <string name="leave">Leave</string>
+    <string name="leave_view_requests_url">leave/view.php</string>
+    <string name="view_remittance_url">work/view_remittance.php</string>
+    <string name="admin">Admin</string>
+    <string name="acknowledged">Acknowledge</string>
+    <string name="pending">Pending</string>
+    <string name="send">Send</string>
+    <string name="enter_remittance_record">Enter Remittance Record</string>
+    <string name="proof_image_uploader">work/proof_image_uploader.php</string>
+    <string name="user_id">user_id</string>
+    <string name="task">task</string>
+    <string name="writeReport">Write Report</string>
+    <string name="title_activity_institution_listing">ActivityInstitutionListing</string>
+    <string name="view_institutions_api_url">institutions/view.php</string>
+    <string name="add_institution_url">institutions/add.php</string>
+    <string name="default_encoding">UTF-8</string>
+    <string name="selected_institution">Selected Institution</string>
+    <string name="update">Update</string>
+    <string name="edit_institution_url">institutions/update.php</string>
+    <string name="delete_institution_url">institutions/delete.php</string>
+    <string name="calling_activity">calling_activity</string>
+    <string name="videoUrl">videoUrl</string>
+    <string name="currentPosition">current position</string>
+    <string name="taken_picture">taken_picture</string>
+    <string name="report_images">report_images</string>
+    <string name="images">Images</string>
+    <string name="approved">Approved</string>
+    <string name="assign_self">Assign Self</string>
+    <string name="create">Create</string>
+
+
+    <!--Strings for Map Activity-->
+    <string name="title_activity_maps">Current Place Details</string>
+    <string name="default_info_title">Default Location</string>
+    <string name="default_info_snippet">No places found, because location permission is disabled.</string>
+    <string name="option_get_place">Get place</string>
+    <string name="pick_place">Choose a place</string>
+</resources>

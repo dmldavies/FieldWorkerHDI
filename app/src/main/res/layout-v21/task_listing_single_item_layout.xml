@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:paddingTop="5dp"
+    android:layout_margin="5dp"
+    android:padding="5dp">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingTop="50dp"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="2dp"
+                    android:text="Task"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:id="@+id/taskText"
+                    android:layout_alignParentStart="true"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pending"
+                    android:gravity="end"
+                    android:textSize="12sp"
+                    android:textColor="@color/red"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="5dp"
+                    android:id="@+id/taskStatusText"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Distribution of always Ultra in secondary schools"
+                android:textColor="@color/black"
+                android:paddingStart="5dp"
+                android:paddingEnd="2dp"
+                android:textSize="11sp"
+                android:textStyle="normal"
+                android:id="@+id/taskTitleText"
+                android:paddingTop="5dp"
+                android:background="@drawable/line"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="2dp"
+                android:text="Description"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:background="@color/white"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Distribution of always to all schools in lagos state"
+                android:paddingStart="5dp"
+                android:paddingEnd="2dp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:id="@+id/taskDescriptionText"
+                android:background="@drawable/line"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="2dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Institution"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="(School)"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    android:id="@+id/taskTypeText"
+                    android:background="@color/white"/>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Federal Government Girls, Lekki"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:paddingStart="5dp"
+                android:paddingEnd="2dp"
+                android:id="@+id/institutionText"
+                android:paddingTop="1dp"
+                android:background="@drawable/line"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="2dp"
+                android:text="Location"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:background="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="18 Afolabi Aina Off Allen Avenu, Ikeja, Lagos state"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:paddingStart="5dp"
+                android:paddingEnd="2dp"
+                android:textStyle="normal"
+                android:id="@+id/locationText"
+                android:paddingTop="1dp"
+                android:background="@drawable/line"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="2dp"
+                android:text="Contact person"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:background="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Njoku Chima (08034343343)"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:paddingStart="5dp"
+                android:paddingEnd="2dp"
+                android:id="@+id/contactPersonText"
+                android:paddingTop="1dp"
+                android:background="@drawable/line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:background="@drawable/line"
+
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Quantity:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="2dp"
+                    android:background="@color/white"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10pcs"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    android:paddingTop="1dp"
+                    android:id="@+id/quantityGivenText"
+                    android:layout_marginStart="20dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Get Directions"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:drawablePadding="5dp"
+                android:id="@+id/getDirection"
+                />
+            <!--android:drawableStart="@drawable/ic_directions_black_24dp"-->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:text="Assigned to"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:gravity="end"
+                android:background="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lateef Jakande"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/username"/>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:id="@+id/userImage"/>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="12 Apr 2018, 12:00pm"
+                android:textColor="@color/black"
+                android:id="@+id/dateTimeText"
+                android:gravity="end"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+

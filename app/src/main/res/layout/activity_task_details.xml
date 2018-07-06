@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.titomi.workertrackerloginmodule.task.TaskDetailsActivity">
+
+    <include layout="@layout/main_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/inClock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clock In" />
+
+                <Button
+                    android:id="@+id/outClock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Clock Out" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Date"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/report_date1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="Date"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="State"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/report_state1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:enabled="false"
+                android:hint="@string/required"
+                android:inputType="none" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Town"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/report_town1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:enabled="false"
+                android:hint="@string/required"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name of Hospital/School"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/report_institution1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:enabled="false"
+                android:hint="@string/required"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Person"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/contact_person1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:enabled="false"
+                android:hint="@string/required"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone No"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/product_sold1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:enabled="false"
+                android:hint="@string/required"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sales"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/message1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:enabled="false"
+                android:hint="@string/optional"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MUM Presents"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/mum_presents1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:enabled="false"
+                android:hint="@string/optional"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Classes Sampled (JSS1 &amp; JSS2)"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/classes_sampled1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:enabled="false"
+                android:hint="@string/optional"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/report_total1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:enabled="false"
+                android:hint="@string/optional"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Demo"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/report_demo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:enabled="false"
+                android:hint="@string/optional"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="School Type"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/school_type1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:enabled="false"
+                android:hint="@string/optional"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sex"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/sex1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:enabled="false"
+                android:hint="@string/optional"
+                android:inputType="number" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/field_image1"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#d2d1d1" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/floatingActionMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:enabled="false"
+        app:layout_behavior="com.example.titomi.workertrackerloginmodule.FloatingActionMenuBehavior"
+        app:menu_backgroundColor="@android:color/transparent"
+        app:menu_colorNormal="@color/colorPrimaryLight"
+        app:menu_fab_label=""
+        app:menu_fab_size="normal"
+        app:menu_labels_textColor="@color/colorfabText"
+        app:menu_openDirection="up"
+        app:menu_showShadow="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_remove_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:overScrollMode="always"
+            android:visibility="gone"
+            app:fabSize="mini"
+            app:fab_label="Remove Photo"
+            app:srcCompat="@drawable/remove_photo" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            app:fab_label="Photo"
+            app:srcCompat="@drawable/ic_photo_camera" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            app:fab_label="Record"
+            app:srcCompat="@drawable/ic_mic" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            app:fab_label="Submit"
+            app:srcCompat="@drawable/ic_send" />
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+</android.support.design.widget.CoordinatorLayout>
